@@ -35,7 +35,7 @@ class Teachers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amberAccent,
+      backgroundColor: Colors.blue,
       body: ListView.separated(
         itemCount: 5,
         separatorBuilder: (BuildContext context, int index) {

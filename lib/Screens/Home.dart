@@ -19,11 +19,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int selectedPage = 0;
   final _pageOptions = [
+    HomeGrammerPage(),
+    Words(),
     Quizes(),
     Teachers(),
     Test(),
-    Meaning(),
-    HomeGrammerPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -146,7 +146,7 @@ class _HomeState extends State<Home> {
           TabItem(icon: Icons.read_more, title: 'Meaning'),
           TabItem(icon: Icons.textsms_sharp, title: 'Test'),
           TabItem(icon: Icons.record_voice_over, title: 'Speaking'),
-          TabItem(icon: Icons.quiz, title: 'Quizes')
+          // TabItem(icon: Icons.quiz, title: 'Quizes')
         ],
         height: 66,
         color: Color.fromARGB(255, 246, 247, 220),

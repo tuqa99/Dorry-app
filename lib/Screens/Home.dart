@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
     Teachers(),
     Test(),
     Meaning(),
-    Grammar(),
+    HomeGrammerPage(),
   ];
   @override
   Widget build(BuildContext context) {

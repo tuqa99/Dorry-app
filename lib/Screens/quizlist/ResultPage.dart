@@ -72,16 +72,7 @@ class _ResultPageState extends State<ResultPage> {
               style: GoogleFonts.merriweather(
                 textStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
               )),
-          ElevatedButton.icon(
-              onPressed: () {
-                //   Navigator.pop(context, MaterialPageRoute(
-                //     builder: (context) {
-                //       return certificate();
-                //     },
-                //   ));
-              },
-              icon: Icon(Icons.star_border_purple500_outlined),
-              label: Text("Get your Certificate")),
+         
         ],
       );
     }

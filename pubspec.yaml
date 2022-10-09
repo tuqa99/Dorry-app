@@ -42,6 +42,7 @@ dependencies:
   google_fonts: ^3.0.1
   url_launcher: ^6.1.6
   ionicons: ^0.2.1
+  audioplayers: ^1.1.1
 
 dev_dependencies:
   flutter_test:
@@ -67,7 +68,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/
-  #   - images/a_dot_ham.jpeg
+    - sounds/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

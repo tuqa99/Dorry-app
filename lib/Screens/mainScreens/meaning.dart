@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 // import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ionicons/ionicons.dart';
@@ -99,7 +100,10 @@ class _WordsState extends State<Words> {
                                 Text("a period of stormy weatherwindswept"),
                             trailing: Icon(Ionicons.volume_high),
                             onTap: () {
-                              setState(() {});
+                              setState(() {
+                                final player = AudioPlayer();
+                                player.play(AssetSource("sunny day.m4a"));
+                              });
                             }),
                         // ElevatedButton(
                         //   onPressed: () {

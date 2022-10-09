@@ -61,7 +61,11 @@ class _WordsState extends State<Words> {
                             subtitle: Text("shining with bright sunlight"),
                             trailing: Icon(Ionicons.volume_high),
                             onTap: () {
-                              setState(() {});
+                              setState(() {
+                                final player = AudioPlayer();
+                                player.play(AssetSource("sunny-day.mp3"));
+                                player.stop();
+                              });
                             }),
                         ListTile(
                             leading: CircleAvatar(
@@ -74,7 +78,11 @@ class _WordsState extends State<Words> {
                                 Text("drops of water that fall from clouds"),
                             trailing: Icon(Ionicons.volume_high),
                             onTap: () {
-                              setState(() {});
+                              setState(() {
+                                final player = AudioPlayer();
+                                player.play(AssetSource("rainy-day.mp3"));
+                                player.stop();
+                              });
                             }),
                         ListTile(
                             leading: CircleAvatar(
@@ -87,7 +95,11 @@ class _WordsState extends State<Words> {
                                 "When the sky is cloudy, it's so full of clouds that you can't see the sun"),
                             trailing: Icon(Ionicons.volume_high),
                             onTap: () {
-                              setState(() {});
+                              setState(() {
+                                final player = AudioPlayer();
+                                player.play(AssetSource("cloudy-day.mp3"));
+                                player.stop();
+                              });
                             }),
                         ListTile(
                             leading: CircleAvatar(
@@ -102,7 +114,7 @@ class _WordsState extends State<Words> {
                             onTap: () {
                               setState(() {
                                 final player = AudioPlayer();
-                                player.play(AssetSource("sunny day.m4a"));
+                                player.play(AssetSource("windy-day.mp3"));
                               });
                             }),
                         // ElevatedButton(
